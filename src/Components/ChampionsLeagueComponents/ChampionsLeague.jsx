@@ -3,47 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './ChampionsLeague.css'; // You can create a separate CSS file for styling
 import Navbar from '../NavigationBarComponents/Navbar';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
-import bayernMunichLogo from '../../images/Logo/groupA/png-transparent-fc-bayern-munich-bundesliga-uefa-champions-league-football-football-cdr-emblem-trademark.png';
-import manchesterUnitedLogo from '../../images/Logo/groupA/manu.png';
-import kopenhagLogo from '../../images/Logo/groupA/FC_Copenhagen_logo.svg.png';
-import galatasarayLogo from '../../images/Logo/groupA/Galatasaray_Sports_Club_Logo.webp';
 
-import sevillaLogo from '../../images/Logo/groupB/Sevillafc.png';
-import arsenalLogo from '../../images/Logo/groupB/Arsenal_Football_Club.png';
-import psvLogo from '../../images/Logo/groupB/psv.png';
-import lensLogo from '../../images/Logo/groupB/RC_Lens_logo.svg.png';
-
-import napoliLogo from '../../images/Logo/groupC/napoli.svg.png';
-import realMadridLogo from '../../images/Logo/groupC/realmi.png';
-import bragaLogo from '../../images/Logo/groupC/braga.png';
-import unionBerlinLogo from '../../images/Logo/groupC/1._FC_Union_Berlin_Logo.svg.png';
-
-import benficaLogo from '../../images/Logo/groupD/benfica.png';
-import interLogo from '../../images/Logo/groupD/inter.png';
-import salzburgLogo from '../../images/Logo/groupD/salzburg.png';
-import realSociedadLogo from '../../images/Logo/groupD/real-sociedad.png';
-
-import feyenoordLogo from '../../images/Logo/groupE/feyenoord.jpeg';
-import atleticoMadridLogo from '../../images/Logo/groupE/atletico-madrid.png';
-import lazioLogo from '../../images/Logo/groupE/S.S._Lazio_badge.svg.png';
-import celticLogo from '../../images/Logo/groupE/celtic.png';
-
-import psgLogo from '../../images/Logo/groupF/psg.png';
-import borussiaDortmundLogo from '../../images/Logo/groupF/borussia-dortmund.png';
-import milanLogo from '../../images/Logo/groupF/milan.png';
-import newcastleUnitedLogo from '../../images/Logo/groupF/newcastle.png';
-
-import manchesterCityLogo from '../../images/Logo/groupG/city.png';
-import rbLeipzigLogo from '../../images/Logo/groupG/leipzig.png';
-import kizilyildizLogo from '../../images/Logo/groupG/kızılyıldız.png';
-import youngBoysLogo from '../../images/Logo/groupG/youngboys.png';
-
-
-
-import barcelonaLogo from '../../images/Logo/groupH/barca.png';
-import portoLogo from '../../images/Logo/groupH/porto.jpeg';
-import shakhtarDonetskLogo from '../../images/Logo/groupH/shaktar.png';
-import antwerpLogo from '../../images/Logo/groupH/antwerp.png';
 function ChampionsLeague() {
     const logoUrl =(id) => `https://sportteamslogo.com/api?key=13aaa61fc2eb497bbe10fea3521ffd97&size=big&tid=${id}`
     const [groups, setGroups] = useState([
