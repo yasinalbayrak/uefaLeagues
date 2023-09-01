@@ -45,77 +45,78 @@ import portoLogo from '../../images/Logo/groupH/porto.jpeg';
 import shakhtarDonetskLogo from '../../images/Logo/groupH/shaktar.png';
 import antwerpLogo from '../../images/Logo/groupH/antwerp.png';
 function ChampionsLeague() {
+    const logoUrl =(id) => `https://sportteamslogo.com/api?key=13aaa61fc2eb497bbe10fea3521ffd97&size=big&tid=${id}`
     const [groups, setGroups] = useState([
         {
             group: 'A Grubu',
             teams: [
-                { name: 'Bayern Münih', logoUrl: bayernMunichLogo },
-                { name: 'Manchester United', logoUrl: manchesterUnitedLogo },
-                { name: 'Kopenhag', logoUrl: kopenhagLogo },
-                { name: 'Galatasaray', logoUrl: galatasarayLogo },
+                { name: 'Bayern Münih', logoUrl: logoUrl(5543) },
+                { name: 'Manchester United', logoUrl:logoUrl(35) },
+                { name: 'Kopenhag', logoUrl: logoUrl(120852) },
+                { name: 'Galatasaray', logoUrl: logoUrl(25426) },
             ],
         },
         {
             group: 'B Grubu',
             teams: [
-                { name: 'Sevilla', logoUrl: sevillaLogo },
-                { name: 'Arsenal', logoUrl: arsenalLogo },
-                { name: 'PSV', logoUrl: psvLogo },
-                { name: 'Lens', logoUrl: lensLogo },
+                { name: 'Sevilla', logoUrl: logoUrl(2833)},
+                { name: 'Arsenal', logoUrl: logoUrl(42) },
+                { name: 'PSV', logoUrl: logoUrl(2952) },
+                { name: 'Lens', logoUrl: logoUrl(1648) },
             ],
         },
         {
             group: 'C Grubu',
             teams: [
-                { name: 'Napoli', logoUrl: napoliLogo },
-                { name: 'Real Madrid', logoUrl: realMadridLogo },
-                { name: 'Braga', logoUrl: bragaLogo },
-                { name: 'Union Berlin', logoUrl: unionBerlinLogo },
+                { name: 'Napoli', logoUrl: logoUrl(2714) },
+                { name: 'Real Madrid', logoUrl: logoUrl(120854) },
+                { name: 'Braga', logoUrl: logoUrl(2999) },
+                { name: 'Union Berlin', logoUrl: logoUrl(36618) },
             ],
         },
         {
             group: 'D Grubu',
             teams: [
-                { name: 'Benfica', logoUrl: benficaLogo },
-                { name: 'Inter', logoUrl: interLogo },
-                { name: 'Salzburg', logoUrl: salzburgLogo },
-                { name: 'Real Sociedad', logoUrl: realSociedadLogo },
+                { name: 'Benfica', logoUrl: logoUrl(3006) },
+                { name: 'Inter', logoUrl: logoUrl(2697) },
+                { name: 'Salzburg', logoUrl: logoUrl(2046) },
+                { name: 'Real Sociedad', logoUrl: logoUrl(24360) },
             ],
         },
         {
             group: 'E Grubu',
             teams: [
-                { name: 'Feyenoord', logoUrl: feyenoordLogo },
-                { name: 'Atletico Madrid', logoUrl: atleticoMadridLogo },
-                { name: 'Lazio', logoUrl: lazioLogo },
-                { name: 'Celtic', logoUrl: celticLogo },
+                { name: 'Feyenoord', logoUrl: logoUrl(2959) },
+                { name: 'Atletico Madrid', logoUrl: logoUrl(2836) },
+                { name: 'Lazio', logoUrl: logoUrl(2699) },
+                { name: 'Celtic', logoUrl: logoUrl(120866) },
             ],
         },
         {
             group: 'F Grubu',
             teams: [
-                { name: 'Paris Saint-Germain', logoUrl: psgLogo },
-                { name: 'Borussia Dortmund', logoUrl: borussiaDortmundLogo },
-                { name: 'Milan', logoUrl: milanLogo },
-                { name: 'Newcastle United', logoUrl: newcastleUnitedLogo },
+                { name: 'Paris Saint-Germain', logoUrl: logoUrl(55505) },
+                { name: 'Borussia Dortmund', logoUrl: logoUrl(43719) },
+                { name: 'Milan', logoUrl: logoUrl(2692) },
+                { name: 'Newcastle United', logoUrl: logoUrl(39) },
             ],
         },
         {
             group: 'G Grubu',
             teams: [
-                { name: 'Manchester City', logoUrl: manchesterCityLogo },
-                { name: 'RB Leipzig', logoUrl: rbLeipzigLogo },
-                { name: 'Kızılyıldız', logoUrl: kizilyildizLogo },
-                { name: 'Young Boys', logoUrl: youngBoysLogo },
+                { name: 'Manchester City', logoUrl: logoUrl(17) },
+                { name: 'RB Leipzig', logoUrl: logoUrl(36360) },
+                { name: 'Kızılyıldız', logoUrl: logoUrl(5149) },
+                { name: 'Young Boys', logoUrl: logoUrl(2445) },
             ],
         },
         {
             group: 'H Grubu',
             teams: [
-                { name: 'Barcelona', logoUrl: barcelonaLogo },
-                { name: 'Porto', logoUrl: portoLogo },
-                { name: 'Shakhtar Donetsk', logoUrl: shakhtarDonetskLogo },
-                { name: 'Antwerp', logoUrl: antwerpLogo },
+                { name: 'Barcelona', logoUrl: logoUrl(77889) },
+                { name: 'Porto', logoUrl: logoUrl(3002) },
+                { name: 'Shakhtar Donetsk', logoUrl: logoUrl(52671) },
+                { name: 'Antwerp', logoUrl: logoUrl(2889) },
             ],
         },
     ]);
@@ -196,7 +197,7 @@ function ChampionsLeague() {
                                                             className="team-container"
                                                         >
                                                             <img
-                                                                src="https://sportteamslogo.com/api?key=13aaa61fc2eb497bbe10fea3521ffd97&size=big&tid=2836"
+                                                                src={team.logoUrl}
                                                                 alt={`${team.name} Logo`}
                                                                 className="team-logo"
                                                             />
