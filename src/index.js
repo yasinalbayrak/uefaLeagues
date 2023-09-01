@@ -8,7 +8,6 @@ import { initReactI18next } from 'react-i18next';
 
 import enTranslations from './Locales/en.json'; // Load English translations
 import trTranslations from './Locales/tr.json'; // Load French translations
-
 i18n
   .use(initReactI18next)
   .init({
