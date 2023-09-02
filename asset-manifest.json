@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/uefaLeagues/static/css/main.9ea8d992.css",
-    "main.js": "/uefaLeagues/static/js/main.86ec9f03.js",
+    "main.css": "/uefaLeagues/static/css/main.fb32ef13.css",
+    "main.js": "/uefaLeagues/static/js/main.4bba98a5.js",
+    "static/media/cl-theme-music.mp3": "/uefaLeagues/static/media/cl-theme-music.40cb451504003bc96e10.mp3",
     "static/media/bgg.png": "/uefaLeagues/static/media/bgg.770d31e333d97762f49a.png",
     "static/media/UEFA_Europa_Conference_League.svg.png": "/uefaLeagues/static/media/UEFA_Europa_Conference_League.svg.d52f7bce68998bb6cf27.png",
     "static/media/UEFA_Champions_League.svg.png": "/uefaLeagues/static/media/UEFA_Champions_League.svg.041c5b484f0b68b23a19.png",
@@ -10,11 +11,11 @@
     "static/media/uefa.png": "/uefaLeagues/static/media/uefa.f32dd63f1bc4b5e8443c.png",
     "static/media/tr.png": "/uefaLeagues/static/media/tr.7cc0bc8a89e18ace52a8.png",
     "index.html": "/uefaLeagues/index.html",
-    "main.9ea8d992.css.map": "/uefaLeagues/static/css/main.9ea8d992.css.map",
-    "main.86ec9f03.js.map": "/uefaLeagues/static/js/main.86ec9f03.js.map"
+    "main.fb32ef13.css.map": "/uefaLeagues/static/css/main.fb32ef13.css.map",
+    "main.4bba98a5.js.map": "/uefaLeagues/static/js/main.4bba98a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ea8d992.css",
-    "static/js/main.86ec9f03.js"
+    "static/css/main.fb32ef13.css",
+    "static/js/main.4bba98a5.js"
   ]
 }
