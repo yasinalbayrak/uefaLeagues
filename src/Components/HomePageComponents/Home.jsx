@@ -52,7 +52,7 @@ function Home() {
             style={containerStyle('cl')}
             onClick={()=>{
               console.log("hi")
-              navigate('/ChampionsLeague');
+              navigate('/europe?league=cl');
 
             }}
             >
@@ -69,6 +69,9 @@ function Home() {
             onMouseOver={() => handleHover('el')}
             onMouseOut={handleHoverOut}
             style={containerStyle('el')}
+            onClick={()=>{
+              navigate('/europe?league=el');
+            }}
           >
             <img
               id="el"
@@ -84,7 +87,7 @@ function Home() {
             onMouseOut={handleHoverOut}
             style={containerStyle('ecl')}
             onClick={()=>{
-              navigate('/ConferenceLeague');
+              navigate('/europe?league=ecl');
             }}
             >
             <img

@@ -11,13 +11,19 @@
   .navbar-nav {
     margin-left: auto;
   }
+  .custom-bg{
+    background:  #083d5b; /* Set your gradient colors */
+    background-size: 200% 100%; /* Control the direction of the gradient */
+    transition: background-position 0.3s ease; /* Add a smooth gradient animation */
+  }
   
   .nav-link {
     color: rgb(255, 255, 255);
     margin-right: 20px; /* Adjust as needed */
+    cursor: pointer;
   }
   .nav-link.cl:hover{
-    color: rgb(69, 69, 243);
+    color: #1e88e5;
   }
   .nav-link.el:hover{
     color:  #FFD100;

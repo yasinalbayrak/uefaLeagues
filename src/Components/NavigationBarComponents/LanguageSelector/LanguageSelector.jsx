@@ -17,14 +17,14 @@ function LanguageSelector() {
 
     return (
         <DropdownButton variant="dark" id="dropdown-basic-button" title={<img className='flag-icon' src={i18n.language === "en" ? enFlag : trFlag } alt="" />}>
-            <Dropdown.Item href="#/action-1" onClick={() => changeLanguage('en')}>
+            <Dropdown.Item  onClick={() => changeLanguage('en')}>
                 <Row>
                     <Col> English</Col>
                     <Col> <img className='flag-icon' src={enFlag} alt="" /></Col>
                 </Row>
 
             </Dropdown.Item>
-            <Dropdown.Item href="#/action-2" onClick={() => changeLanguage('tr')}>
+            <Dropdown.Item  onClick={() => changeLanguage('tr')}>
                 <Row>
                     <Col> Turkish</Col>
                     <Col> <img className='flag-icon' src={trFlag} alt="" /></Col>

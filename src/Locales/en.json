@@ -1,5 +1,6 @@
 {
     "CL": "Champions League",
     "EL": "Europe League",
-    "ECL": "Conference League"
+    "ECL": "Conference League",
+    "GroupStage": "Champions League Group Stage"
 }

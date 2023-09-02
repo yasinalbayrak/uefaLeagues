@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css';
 import uefaLogo from '../../images/uefa.png';
@@ -7,9 +8,9 @@ import LanguageSelector from './LanguageSelector/LanguageSelector';
 import conferenceLogo from "../../images/conference2.png"
 function Navbar() {
     const { t } = useTranslation();
-
+    const navigate = useNavigate()
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark ">
+        <nav className="navbar navbar-expand-lg navbar-light bg-dark">
             <div className="container">
                 <a className="navbar-brand" href="/">
                     <img className='uefa-logo' src={uefaLogo} alt="Your Logo" />
@@ -28,15 +29,15 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                            <a className="nav-link cl" href="/champions-league">
+                            <a className="nav-link cl" onClick={()=>{navigate("/europe?league=cl")}}>
                                 {t('CL')}
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link el" href="/europe-league">{t('EL')}</a>
+                            <a className="nav-link el" onClick={()=>{navigate("/europe?league=el")}}>{t('EL')}</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link ecl" href="/conference-league">{t('ECL')}</a>
+                            <a className="nav-link ecl" onClick={()=>{navigate("/europe?league=ecl")}}>{t('ECL')}</a>
                         </li>
 
                     </ul>
