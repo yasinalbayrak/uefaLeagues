@@ -89,23 +89,26 @@
 
 
 }
-/* Apply styles for screens with a width of exactly 1536px */
-@media (min-width: 1536px) and (max-width: 1536px) {
+/* Apply styles for screens with a width of up to 1536px and a height of up to 738.40px */
+@media (max-width: 1536px) and (max-height: 738.40px) {
   .container-box {
-    font-size: 15px; /* Adjust margin for screens with a width of 1536px */
+    font-size: 15px;
     aspect-ratio: 1/1;
     width: 15rem;
+  }
+}
+/* Apply styles for screens with a width of up to 1280px and a height of up to 615.33px */
+@media (max-width: 1280px) and (max-height: 615.33px) {
+  .container-box {
+    font-size: 15px;
+    aspect-ratio: 1/1;
+    width: 13rem;
   }
 }
 
-/* Apply styles for screens with a height of exactly 738.40px */
-@media (min-height: 738.40px) and (max-height: 738.40px) {
-  .container-box {
-    font-size: 15px; /* Adjust margin for screens with a height of 738.40px */
-    aspect-ratio: 1/1;
-    width: 15rem;
-  }
-}
+
+
+
 .team-info {
   display: flex;
   /* Display children in a row */
