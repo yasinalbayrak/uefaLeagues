@@ -1,120 +1,198 @@
-.wh-pg{
-    height: 100vh; /* 100% of viewport height */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 5em;
-    background-image: url("https://images5.alphacoders.com/571/thumb-1920-571559.jpg");
-  
-    overflow-y: auto;
+.wh-pg {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5em;
+  background-image: url("https://images5.alphacoders.com/571/thumb-1920-571559.jpg");
+  overflow-y: auto;
+  background-size: cover;
+  /* Default background-size for 100% zoom */
+
+  /* Media query for larger zoom (125% or more) */
+  @media (min-width: 125%) {
+    background-size: contain;
+    /* Adjust background-size for larger zoom */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  /* Media query for smaller zoom (less than 100%) */
+  @media (max-width: 100%) {
+    background-size: cover;
+    /* Adjust background-size for smaller zoom */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
 
 .page-title {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  margin: 20px 0;
+  margin: 0.2rem 0;
+ 
 }
+
 
 /* Define the animation for changing colors */
 @keyframes changeColors {
-  0% { color: #ff5733; } /* Start with the initial color */
-  25% { color: #33ff57; } /* Change to a different color */
-  50% { color: #5733ff; } /* Another color */
-  75% { color: #ff3373; } /* Yet another color */
-  100% { color: #ff5733; } /* Back to the initial color */
+  0% {
+    color: #ff5733;
+  }
+
+  /* Start with the initial color */
+  25% {
+    color: #33ff57;
+  }
+
+  /* Change to a different color */
+  50% {
+    color: #5733ff;
+  }
+
+  /* Another color */
+  75% {
+    color: #ff3373;
+  }
+
+  /* Yet another color */
+  100% {
+    color: #ff5733;
+  }
+
+  /* Back to the initial color */
 }
 
 /* Apply the animation to the title */
 .page-title {
-  animation: changeColors 5s linear infinite; /* Change colors every 5 seconds */
+  animation: changeColors 5s linear infinite;
+  /* Change colors every 5 seconds */
 }
-  .cnt-cnt{
-    margin-top: 5em;
-    flex-grow: 1;
-    
+
+/* Add a class selector to increase specificity */
+.cnt-cnt {
+  margin-top: 1em;
+  flex-grow: 1;
+}
+
+
+
+
+.container-box {
+  aspect-ratio: 1/1;
+  width: 17rem;
+  margin: 10px;
+  font-size: 20px;
+
+
+}
+/* Apply styles for screens with a width of exactly 1536px */
+@media (min-width: 1536px) and (max-width: 1536px) {
+  .container-box {
+    font-size: 15px; /* Adjust margin for screens with a width of 1536px */
+    aspect-ratio: 1/2;
   }
-  .container-box{
+}
+
+/* Apply styles for screens with a height of exactly 738.40px */
+@media (min-height: 738.40px) and (max-height: 738.40px) {
+  .container-box {
+    font-size: 15px; /* Adjust margin for screens with a height of 738.40px */
     aspect-ratio: 1/1;
-    width: 17rem;
-    margin: 10px;
-    font-size: 20px;
+    width: 15rem;
   }
-  .team-info {
-    display: flex; /* Display children in a row */
-    align-items: center; /* Center vertically */
-  }
-  .team-logo {
-    margin-left: 0.5rem;
-    width: 30px; /* Set the desired width for the team logos */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  .team-name {
-    margin-left: 1rem;
-    margin-top: 10px; /* Adjust the margin as needed */
-   
-    font-weight: bold;
-  }
-  .group-letter{
-    display: flex;
-    justify-content: center;
-    border-bottom: 2px solid rgba(250, 128, 114, 0.548);
-  }
+}
+.team-info {
+  display: flex;
+  /* Display children in a row */
+  align-items: center;
+  /* Center vertically */
+}
 
-  .my-color{
-    background-color: rgba(0, 0, 255, 0.5);
-    border: 1px solid #333; /* Border color */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 3D shadow effect */
-    border-radius: 10px; /* Rounded corners */
-  
-    color: white; /* Text color */
-  }
-  .team-container {
-    width: 100%; /* Set a fixed width as needed */
-    /* Your existing styles for team containers */
-    margin-top: 1rem;
-   
-  }
-  .position{
-    margin-left: 0.3rem;
-    font-weight: bold;
-    
-    
-  }
-  .position:is(.p1,.p2){
-    color: green;
-    
-  }
-  .position.p3{
-    color: orange;
-  }
+.team-logo {
+  margin-left: 0.5rem;
+  width: 30px;
+  /* Set the desired width for the team logos */
+  height: auto;
+  /* Maintain aspect ratio */
+}
 
-  .fullscreen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background-color: rgba(0, 0, 0, 0.9); /* Add a semi-transparent background overlay */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .fullscreen .group-header {
-    /* Styles for the group header in fullscreen mode */
-  }
+.team-name {
+  margin-left: 1rem;
+  margin-top: 10px;
+  /* Adjust the margin as needed */
 
-  .fs-btn{
+  font-weight: bold;
+}
 
-  }
+.group-letter {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid rgba(250, 128, 114, 0.548);
+}
 
-  .last-row-fs-btn{
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 1rem;
-  }
+.my-color {
+  background-color: rgba(0, 0, 255, 0.5);
+  border: 1px solid #333;
+  /* Border color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* 3D shadow effect */
+  border-radius: 10px;
+  /* Rounded corners */
+
+  color: white;
+  /* Text color */
+}
+
+.team-container {
+  width: 100%;
+  /* Set a fixed width as needed */
+  /* Your existing styles for team containers */
+  margin-top: 1rem;
+
+}
+
+.position {
+  margin-left: 0.3rem;
+  font-weight: bold;
+
+
+}
+
+.position:is(.p1, .p2) {
+  color: green;
+
+}
+
+.position.p3 {
+  color: orange;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Add a semi-transparent background overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreen .group-header {
+  /* Styles for the group header in fullscreen mode */
+}
+
+.fs-btn {}
+
+.last-row-fs-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}

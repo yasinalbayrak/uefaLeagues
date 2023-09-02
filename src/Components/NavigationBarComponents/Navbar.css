@@ -3,7 +3,9 @@
     background-color: #333; /* Change to your desired background color */
     color: white;
   }
-  
+  .custom-toggler-icon {
+    color: white; /* Set the background color to white */
+}
   .navbar-brand {
     font-size: 24px;
   }
@@ -36,6 +38,7 @@
   .uefa-logo{
     aspect-ratio: 1/1;
     width: 5rem;
+    cursor: pointer;
   }
   .myRow{
     display: flex;
