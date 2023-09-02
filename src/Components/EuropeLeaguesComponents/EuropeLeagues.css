@@ -93,7 +93,8 @@
 @media (min-width: 1536px) and (max-width: 1536px) {
   .container-box {
     font-size: 15px; /* Adjust margin for screens with a width of 1536px */
-    aspect-ratio: 1/2;
+    aspect-ratio: 1/1;
+    width: 15rem;
   }
 }
 
