@@ -12,7 +12,7 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-dark">
             <div className="container">
-                <a className="navbar-brand" onClick={()=>{navigate("/europe?league=cl")}}>
+                <a className="navbar-brand" onClick={()=>{navigate("/")}}>
                     <img className='uefa-logo' src={uefaLogo} alt="Your Logo" />
                 </a>
                 <button

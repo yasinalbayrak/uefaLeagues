@@ -4,11 +4,8 @@
     display: flex;
     flex-direction: column;
     padding: 0 5em;
-    background-image: url("../../images/bgg.png");
-    background-image: url("https://wallpaperaccess.com/full/1348815.jpg");
     background-image: url("https://images5.alphacoders.com/571/thumb-1920-571559.jpg");
   
-
     overflow-y: auto;
 }
 
