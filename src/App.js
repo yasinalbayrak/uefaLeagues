@@ -7,7 +7,7 @@ import ChampionsLeague from './Components/ChampionsLeagueComponents/ChampionsLea
 
 function App() {
   return (
-    <BrowserRouter basename="/yasinalbayrak.github.io/uefaLeagues/">
+    <BrowserRouter basename="/uefaLeagues">
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/ChampionsLeague" element={<ChampionsLeague />} />
