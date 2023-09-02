@@ -1,21 +1,17 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import Home from './Components/HomePageComponents/Home';
 import ChampionsLeague from './Components/ChampionsLeagueComponents/ChampionsLeague';
 
-
-
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/ChampionsLeague" element={<ChampionsLeague />} />
-
-      </Routes>
-    </BrowserRouter>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/ChampionsLeague" component={ChampionsLeague} />
+      </Switch>
+    </Router>
   );
 }
 
