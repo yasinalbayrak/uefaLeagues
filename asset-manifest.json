@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/yasinalbayrak/uefaLeagues/static/css/main.695f0374.css",
+    "main.js": "/yasinalbayrak/uefaLeagues/static/js/main.507ab2fa.js",
+    "static/media/bgg.png": "/yasinalbayrak/uefaLeagues/static/media/bgg.770d31e333d97762f49a.png",
+    "static/media/UEFA_Europa_Conference_League.svg.png": "/yasinalbayrak/uefaLeagues/static/media/UEFA_Europa_Conference_League.svg.d52f7bce68998bb6cf27.png",
+    "static/media/UEFA_Champions_League.svg.png": "/yasinalbayrak/uefaLeagues/static/media/UEFA_Champions_League.svg.041c5b484f0b68b23a19.png",
+    "static/media/conference2.png": "/yasinalbayrak/uefaLeagues/static/media/conference2.13db56035ff80f3dccc8.png",
+    "static/media/resized_el.png": "/yasinalbayrak/uefaLeagues/static/media/resized_el.c08d695c9494f9d2f7ad.png",
+    "static/media/uefa.png": "/yasinalbayrak/uefaLeagues/static/media/uefa.f32dd63f1bc4b5e8443c.png",
+    "static/media/tr.png": "/yasinalbayrak/uefaLeagues/static/media/tr.7cc0bc8a89e18ace52a8.png",
+    "index.html": "/yasinalbayrak/uefaLeagues/index.html",
+    "main.695f0374.css.map": "/yasinalbayrak/uefaLeagues/static/css/main.695f0374.css.map",
+    "main.507ab2fa.js.map": "/yasinalbayrak/uefaLeagues/static/js/main.507ab2fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.695f0374.css",
+    "static/js/main.507ab2fa.js"
+  ]
+}
